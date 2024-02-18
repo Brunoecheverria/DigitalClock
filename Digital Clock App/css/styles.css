@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 105%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#clock {
+    text-align: center;
+}
+
+.clock-container {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hour {
+    font-size: 80px;
+    color: #ffffff;
+    animation: fadeInOut 1s linear infinite alternate;
+}
+
+#date {
+    font-size: 24px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.animate {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }   
+}
